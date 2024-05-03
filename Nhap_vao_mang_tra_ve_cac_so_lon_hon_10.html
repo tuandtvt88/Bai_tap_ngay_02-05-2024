@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function demso(array){
+        let dem=0;
+        for (let i=0;i<array.length;i++){
+            if (array[i]>10){
+                dem++;
+            }
+        }
+        return dem;
+    }
+    let i = [11,2,23,4,34,5,65,6,77];
+    let kq = demso(i);
+    document.write('Số lượng các số lớn hơn 10 trong hàm là ' +kq);
+</script>
+</body>
+</html>

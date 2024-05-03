@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ham(array){
+        let dem =0;
+        let tong =0;
+        for (let i=0;i<array.length;i++){
+            if(array[i]>10){
+                tong = tong + array[i];
+                dem++;
+            }
+        }
+        let tbc = tong/dem;
+        return tbc;
+    }
+    let i = [11,2,22,3,33,4,44,5,12,13];
+    let tbc = ham(i);
+    document.write(tbc);
+</script>
+</body>
+</html>

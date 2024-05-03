@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function ham(array){
+        let tong = 0;
+        for (let i=0;i<array.length;i++){
+            if(array[i]>10){
+                tong = tong + array[i];
+            }
+        }
+        return tong;
+    }
+    let i = [11,0,12,9,13,14,3];
+    let tong = ham(i);
+    document.write('tổng các số lớn hơn 10 là: '+tong);
+</script>
+</body>
+</html>
